@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Jogo da Memória
 
-## Getting Started
+## 📝 Descrição
 
-First, run the development server:
+Um jogo da memória interativo desenvolvido com tecnologias web modernas.
+
+## 🚀 Como Executar
+
+### Pré-requisitos
+
+- Node.js instalado
+- NPM ou Yarn
+
+### Instalação
+
+```bash
+Clone o repositório
+git clone [url-do-seu-repositorio]
+Entre na pasta do projeto
+cd [nome-da-pasta]
+Instale as dependências
+npm install
+ou
+yarn install
+```
+
+### Executando o Projeto
+
+#### Modo Desenvolvimento
 
 ```bash
 npm run dev
-# or
+ou
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+#### Modo Produção
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+Fazer o build
+npm run build
+ou
+yarn build
+Executar versão de produção
+npm start
+ou
+yarn start
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📁 Estrutura do Projeto
 
-## Learn More
+### Imagens do Jogo
 
-To learn more about Next.js, take a look at the following resources:
+- Coloque suas imagens na pasta `public/images/`
+- Use imagens de dimensões consistentes (recomendado: 100x100px)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Personalização
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Edite as paletas de cores em `src/styles/theme.ts`
+- Ajuste as dicas e referências do jogo no componente `src/components/reference-sidebar/index.tsx`
 
-## Deploy on Vercel
+## 📜 Regras do Jogo
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. O jogo começa com todas as cartas viradas para baixo
+2. O jogador pode virar duas cartas por vez
+3. Se as cartas forem iguais, elas permanecem viradas
+4. Se forem diferentes, elas são viradas para baixo novamente
+5. O objetivo é encontrar todos os pares de cartas
+6. O jogo termina quando todos os pares forem encontrados
+7. Pontuação é baseada no número de tentativas e tempo gasto
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📄 Licença
+
+Este projeto está sob a licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
+
+## 🤝 Contribuição
+
+Contribuições são sempre bem-vindas! Por favor, leia o guia de contribuição antes de submeter alterações.
+
+## 📞 Contato
+
+Delfim Celestino - delfimcelestinoamissepastola@gmail.com
+
+Link do Projeto: https://blind-code.vercel.app/
